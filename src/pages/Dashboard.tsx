@@ -100,7 +100,7 @@ export default function Dashboard() {
 
             <div className="h-8 w-[1px] bg-gray-200 dark:bg-gray-800 hidden sm:block" />
 
-            <div className="hidden md:block">
+            <div className="block">
               <RoleSwitcher />
             </div>
 
