@@ -130,7 +130,7 @@ Fully responsive across:
 </h1>
 
 <p align="center">
-<b>Track. Analyze. Prosper.</b>
+<b>Track. Analyze. Prosper</b>
 </p>
 
 <p align="center">
