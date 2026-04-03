@@ -1,5 +1,6 @@
 import { LayoutDashboard, PieChart as AnalyticsIcon, Receipt, Target, Settings, LogOut, Zap, X } from 'lucide-react';
 import { cn } from '../lib/utils';
+import RoleSwitcher from "./RoleSwitcher";
 
 const menuItems = [
   { icon: <LayoutDashboard size={18} />, label: 'Dashboard', active: true },
@@ -38,7 +39,6 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-3">
 
-                {/* Updated Logo */}
                 <div className="w-10 h-10 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-md p-1">
                 <img src="/logo.png"
                      alt="WealthPulse"
@@ -62,6 +62,9 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             >
               <X size={20} />
             </button>
+          </div>
+          <div className="mb-6">
+              <RoleSwitcher />
           </div>
 
           {/* Navigation */}
