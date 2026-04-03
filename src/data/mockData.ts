@@ -1,0 +1,45 @@
+export const mockTransactions = [
+  { id: '1', date: '2026-03-01', amount: 45000, category: 'Salary', type: 'Income', notes: 'Monthly salary' },
+  { id: '2', date: '2026-03-02', amount: 1200, category: 'Food', type: 'Expense', notes: 'Dinner at restaurant' },
+  { id: '3', date: '2026-03-03', amount: 3500, category: 'Rent', type: 'Expense', notes: 'Monthly rent share' },
+  { id: '4', date: '2026-03-04', amount: 800, category: 'Transport', type: 'Expense', notes: 'Fuel' },
+  { id: '5', date: '2026-03-05', amount: 2500, category: 'Shopping', type: 'Expense', notes: 'New clothes' },
+  { id: '6', date: '2026-03-06', amount: 1500, category: 'Entertainment', type: 'Expense', notes: 'Movie night' },
+  { id: '7', date: '2026-03-07', amount: 5000, category: 'Freelance', type: 'Income', notes: 'Web design project' },
+  { id: '8', date: '2026-03-08', amount: 600, category: 'Food', type: 'Expense', notes: 'Groceries' },
+  { id: '9', date: '2026-03-09', amount: 1200, category: 'Health', type: 'Expense', notes: 'Medicine' },
+  { id: '10', date: '2026-03-10', amount: 2000, category: 'Investment', type: 'Expense', notes: 'Mutual fund' },
+  { id: '11', date: '2026-03-11', amount: 450, category: 'Transport', type: 'Expense', notes: 'Uber ride' },
+  { id: '12', date: '2026-03-12', amount: 3000, category: 'Food', type: 'Expense', notes: 'Weekly groceries' },
+  { id: '13', date: '2026-03-13', amount: 10000, category: 'Bonus', type: 'Income', notes: 'Performance bonus' },
+  { id: '14', date: '2026-03-14', amount: 1500, category: 'Shopping', type: 'Expense', notes: 'Books' },
+  { id: '15', date: '2026-03-15', amount: 750, category: 'Entertainment', type: 'Expense', notes: 'Netflix subscription' },
+  { id: '16', date: '2026-03-16', amount: 2200, category: 'Food', type: 'Expense', notes: 'Dinner with friends' },
+  { id: '17', date: '2026-03-17', amount: 1200, category: 'Transport', type: 'Expense', notes: 'Train ticket' },
+  { id: '18', date: '2026-03-18', amount: 500, category: 'Health', type: 'Expense', notes: 'Checkup' },
+  { id: '19', date: '2026-03-19', amount: 4000, category: 'Freelance', type: 'Income', notes: 'Logo design' },
+  { id: '20', date: '2026-03-20', amount: 1800, category: 'Shopping', type: 'Expense', notes: 'Electronics' },
+  { id: '21', date: '2026-03-21', amount: 900, category: 'Food', type: 'Expense', notes: 'Lunch' },
+  { id: '22', date: '2026-03-22', amount: 3500, category: 'Rent', type: 'Expense', notes: 'Utility bills' },
+  { id: '23', date: '2026-03-23', amount: 1100, category: 'Transport', type: 'Expense', notes: 'Taxi' },
+  { id: '24', date: '2026-03-24', amount: 2500, category: 'Investment', type: 'Expense', notes: 'Stocks' },
+  { id: '25', date: '2026-03-25', amount: 1500, category: 'Entertainment', type: 'Expense', notes: 'Concert ticket' },
+];
+
+export const chartData = [
+  { name: 'Jan', income: 40000, expense: 24000 },
+  { name: 'Feb', income: 45000, expense: 28000 },
+  { name: 'Mar', income: 64000, expense: 35000 },
+  { name: 'Apr', income: 48000, expense: 30000 },
+  { name: 'May', income: 52000, expense: 32000 },
+  { name: 'Jun', income: 60000, expense: 38000 },
+];
+
+export const categoryData = [
+  { name: 'Food', value: 12000 },
+  { name: 'Rent', value: 15000 },
+  { name: 'Shopping', value: 8000 },
+  { name: 'Transport', value: 5000 },
+  { name: 'Entertainment', value: 6000 },
+  { name: 'Health', value: 3000 },
+];
