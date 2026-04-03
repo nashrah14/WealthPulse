@@ -7,8 +7,7 @@ A modern, responsive finance dashboard built with **React + Vite** designed to h
 
 # 🌟 Live Demo
 
-🔗 **Live Demo:** (Add after deployment)  
-`https://wealthpulse-snowy.vercel.app/`
+🔗 **Live Demo:** https://wealthpulse-snowy.vercel.app/
 
 ---
 
