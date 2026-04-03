@@ -1,6 +1,6 @@
 import { LayoutDashboard, PieChart as AnalyticsIcon, Receipt, Target, Settings, LogOut, Zap, X } from 'lucide-react';
 import { cn } from '../lib/utils';
-import RoleSwitcher from "./RoleSwitcher";
+
 
 const menuItems = [
   { icon: <LayoutDashboard size={18} />, label: 'Dashboard', active: true },
@@ -62,9 +62,6 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             >
               <X size={20} />
             </button>
-          </div>
-          <div className="mb-6">
-              <RoleSwitcher />
           </div>
 
           {/* Navigation */}
