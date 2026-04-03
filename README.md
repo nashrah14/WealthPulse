@@ -126,7 +126,7 @@ Fully responsive across:
 ---
 
 <div align="center">
-<img src="./logo.png" alt="WealthPulse Logo" width="120" />
+<img src="public/logo.png" alt="WealthPulse Logo" width="120" />
 #  WealthPulse
 
 ### Track. Analyze. Prosper.
