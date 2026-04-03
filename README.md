@@ -124,11 +124,10 @@ Fully responsive across:
 - Zustand
 
 ---
----
 
 <div align="center">
-
-## 🚀 WealthPulse
+<img src="./logo.png" alt="WealthPulse Logo" width="120" />
+##  WealthPulse
 
 ### Track. Analyze. Prosper.
 
