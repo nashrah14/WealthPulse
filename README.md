@@ -125,12 +125,15 @@ Fully responsive across:
 
 ---
 
-<div align="center">
-<img src="public/logo.png" alt="WealthPulse Logo" width="120" />
-#  WealthPulse
+<h1 align="center">
+  <img src="public/logo.png" width="40" style="vertical-align: middle;" />
+  WealthPulse
+</h1>
 
-### Track. Analyze. Prosper.
+<p align="center">
+<b>Track. Analyze. Prosper.</b>
+</p>
 
-Built with ❤️ by **Nashrah Fathima**
-
-</div>
+<p align="center">
+Built with ❤️ by <b>Nashrah Fathima</b>
+</p>
