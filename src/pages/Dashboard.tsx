@@ -10,6 +10,7 @@ import Sidebar from '../components/Sidebar';
 import Modal from '../components/Modal';
 import ThemeToggle from '../components/ThemeToggle';
 import RoleSwitcher from '../components/RoleSwitcher';
+import Footer from "../components/Footer";
 import { cn, formatCurrency } from '../lib/utils';
 import { motion } from 'motion/react';
 
@@ -244,6 +245,7 @@ export default function Dashboard() {
           <Insights />
           <Transactions />
         </div>
+        <Footer />
       </main>
 
       {/* Modals */}
