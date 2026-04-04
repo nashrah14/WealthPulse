@@ -1,13 +1,12 @@
 import { LayoutDashboard, PieChart as AnalyticsIcon, Receipt, Target, Settings, LogOut, Zap, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 
-
 const menuItems = [
-  { icon: <LayoutDashboard size={18} />, label: 'Dashboard', active: true },
-  { icon: <AnalyticsIcon size={18} />, label: 'Analytics', active: false },
-  { icon: <Receipt size={18} />, label: 'Transactions', active: false },
-  { icon: <Target size={18} />, label: 'Goals', active: false },
-  { icon: <Settings size={18} />, label: 'Settings', active: false },
+  { icon: <LayoutDashboard size={18} />, label: 'Dashboard', id: 'dashboard' },
+  { icon: <AnalyticsIcon size={18} />, label: 'Analytics', id: 'analytics' },
+  { icon: <Receipt size={18} />, label: 'Transactions', id: 'transactions' },
+  { icon: <Target size={18} />, label: 'Goals', id: 'goals' },
+  { icon: <Settings size={18} />, label: 'Settings', id: 'overview' },
 ];
 
 interface SidebarProps {
@@ -16,6 +15,17 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ isOpen, onClose }: SidebarProps) {
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    onClose(); // close sidebar on mobile after click
+  };
+
   return (
     <>
       {/* Mobile & Desktop Overlay */}
@@ -40,10 +50,11 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               <div className="flex items-center gap-3">
 
                 <div className="w-10 h-10 rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center shadow-md p-1">
-                <img src="/logo.png"
-                     alt="WealthPulse"
-                     className="w-full h-full object-contain"
-                    />
+                  <img 
+                    src="/logo.png"
+                    alt="WealthPulse"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <span className="text-xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
@@ -69,20 +80,18 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             {menuItems.map((item) => (
               <button
                 key={item.label}
+                onClick={() => scrollToSection(item.id)}
                 className={cn(
                   "w-full flex items-center gap-3.5 px-4 py-2.5 rounded-xl transition-all group",
-                  item.active 
-                    ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400" 
-                    : "text-gray-400 dark:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-900 hover:text-gray-900 dark:hover:text-gray-100"
+                  "text-gray-400 dark:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-900 hover:text-gray-900 dark:hover:text-gray-100"
                 )}
               >
-                <div className={cn(
-                  "transition-transform group-hover:scale-110",
-                  item.active ? "text-blue-600 dark:text-blue-400" : "text-gray-400 dark:text-gray-500"
-                )}>
+                <div className="transition-transform group-hover:scale-110">
                   {item.icon}
                 </div>
-                <span className="font-semibold text-sm">{item.label}</span>
+                <span className="font-semibold text-sm">
+                  {item.label}
+                </span>
               </button>
             ))}
           </nav>
@@ -94,8 +103,12 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center text-white mb-3">
                 <Zap size={16} fill="currentColor" />
               </div>
-              <h4 className="text-white font-bold text-xs mb-1">WealthPulse Pro</h4>
-              <p className="text-blue-100 text-[10px] leading-relaxed mb-3">Unlock advanced wealth tracking & AI insights</p>
+              <h4 className="text-white font-bold text-xs mb-1">
+                WealthPulse Pro
+              </h4>
+              <p className="text-blue-100 text-[10px] leading-relaxed mb-3">
+                Unlock advanced wealth tracking & AI insights
+              </p>
               <button className="w-full py-2 bg-white text-blue-600 text-[10px] font-bold rounded-lg hover:bg-blue-50 transition-colors">
                 Upgrade Now
               </button>
@@ -105,7 +118,9 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           {/* Logout */}
           <button className="mt-4 flex items-center gap-3.5 px-4 py-2.5 rounded-xl text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/10 transition-all">
             <LogOut size={18} />
-            <span className="font-semibold text-sm">Logout</span>
+            <span className="font-semibold text-sm">
+              Logout
+            </span>
           </button>
 
         </div>
