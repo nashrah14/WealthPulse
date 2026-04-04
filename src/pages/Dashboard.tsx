@@ -126,7 +126,6 @@ export default function Dashboard() {
               <h2 className="text-4xl font-black text-gray-900 dark:text-gray-100 tracking-tight mb-2">Dashboard Overview</h2>
               <p className="text-gray-500 dark:text-gray-400 text-lg font-medium">Welcome back, Nashrah! Here's your financial pulse for today.</p>
             </div>
-            </section>
             
             {role === 'Admin' && (
               <div className="flex flex-wrap items-center gap-4">
@@ -154,6 +153,7 @@ export default function Dashboard() {
               </div>
             )}
           </div>
+          </section>
 
           <section id="overview">
             <SummaryCards />
