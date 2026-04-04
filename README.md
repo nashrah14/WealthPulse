@@ -158,7 +158,8 @@ Dashboard adapts seamlessly to different screen sizes.
 ---
 
 # 🏗 Project Structure
-```src/
+```
+src/
 │
 ├── components/
 │ ├── Sidebar.tsx
@@ -184,7 +185,8 @@ Dashboard adapts seamlessly to different screen sizes.
 │ └── mockData.ts
 │
 └── lib/
-└── utils.ts ```
+└── utils.ts
+```
 
 ---
 
