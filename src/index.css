@@ -7,22 +7,34 @@
 }
 
 @layer base {
+
   html {
+    scroll-behavior: smooth;
     @apply transition-colors duration-300;
   }
 
   body {
     @apply bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
   }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+
 }
 
+/* Glass Card */
 .glass-card {
   @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm rounded-[24px];
 }
 
+
+/* Scrollbar */
 @layer utilities {
+
   .scrollbar-thin::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
   }
 
   .scrollbar-thin::-webkit-scrollbar-track {
@@ -32,4 +44,12 @@
   .scrollbar-thin::-webkit-scrollbar-thumb {
     @apply bg-gray-200 dark:bg-gray-800 rounded-full;
   }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-300 dark:bg-gray-700;
+  }
+
+}
+section {
+  scroll-margin-top: 100px;
 }
