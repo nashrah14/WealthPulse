@@ -156,6 +156,7 @@ export default function Dashboard() {
           <SummaryCards />
           <FinancialHealth />
           <Goals />
+          <Charts />
 
           {/* Budget & Goals Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
