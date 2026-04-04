@@ -158,7 +158,7 @@ Dashboard adapts seamlessly to different screen sizes.
 ---
 
 # 🏗 Project Structure
-`src/
+```src/
 │
 ├── components/
 │ ├── Sidebar.tsx
@@ -184,9 +184,7 @@ Dashboard adapts seamlessly to different screen sizes.
 │ └── mockData.ts
 │
 └── lib/
-└── utils.ts `
-
----
+└── utils.ts ```
 
 ---
 
@@ -207,21 +205,13 @@ Dashboard adapts seamlessly to different screen sizes.
 ---
 # Install dependencies:
 
-``` npm install
+``` npm install```
 
 # Run development server:
 
-``` npm run dev
+``` npm run dev```
 
 ---
-<h1 align="center">
-  <img src="public/logo.png" width="40" style="vertical-align: middle;" />
-  WealthPulse
-</h1>
-
-<p align="center">
-<b>Track. Analyze. Prosper</b>
-</p>
 
 <p align="center">
 Built with ❤️ by <b>Nashrah Fathima</b>
