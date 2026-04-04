@@ -9,6 +9,7 @@ import Insights from '../components/Insights';
 import Sidebar from '../components/Sidebar';
 import Modal from '../components/Modal';
 import ThemeToggle from '../components/ThemeToggle';
+import Goals from "../components/Goals";
 import RoleSwitcher from '../components/RoleSwitcher';
 import Footer from "../components/Footer";
 import { cn, formatCurrency } from '../lib/utils';
@@ -154,6 +155,7 @@ export default function Dashboard() {
 
           <SummaryCards />
           <FinancialHealth />
+          <Goals />
 
           {/* Budget & Goals Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
